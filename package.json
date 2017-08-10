@@ -7,7 +7,8 @@
     "grpc": "grpc-server --host localhost:50051 -I ./proto helloworld.proto helloworld.js",
     "gateway": "grpc-dynamic-gateway -g localhost:50051 -I ./proto helloworld.proto",
     "test": "grpc-client run --host localhost:50051 -I ./proto helloworld.proto -m helloworld.Greeter.sayHello -a '{\"name\": \"World\"}'",
-    "ls": "grpc-client ls -I ./proto helloworld.proto"
+    "ls": "grpc-client ls -I ./proto helloworld.proto",
+    "genserver": "grpc-client generate -I ./proto helloworld.proto"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,7 @@
   },
   "homepage": "https://github.com/konsumer/grpc-demo#readme",
   "dependencies": {
-    "grpc-dynamic-gateway": "^0.2.0",
-    "grpcnode": "0.0.20"
+    "grpc-dynamic-gateway": "0.2.1",
+    "grpcnode": "0.0.21"
   }
 }
