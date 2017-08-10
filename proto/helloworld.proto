@@ -16,8 +16,18 @@ message GreeterReply {
 // The greeting service definition.
 service Greeter {
   // Sends a greeting
-  rpc SayHello (GreeterRequest) returns (GreeterReply) {}
+  rpc SayHello (GreeterRequest) returns (GreeterReply) {
+    option (google.api.http) = {
+      post: "/v1/hi"
+      body: "*"
+    };
+  }
 
   // Sends a farewell
-  rpc SayGoodbye (GreeterRequest) returns (GreeterReply) {}
+  rpc SayGoodbye (GreeterRequest) returns (GreeterReply) {
+    option (google.api.http) = {
+      post: "/v1/bye"
+      body: "*"
+    };
+  }
 }
