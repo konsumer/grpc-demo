@@ -22,6 +22,6 @@
   "homepage": "https://github.com/konsumer/grpc-demo#readme",
   "dependencies": {
     "grpc-dynamic-gateway": "0.2.1",
-    "grpcnode": "0.0.21"
+    "grpcnode": "0.1.0"
   }
 }
