@@ -25,4 +25,4 @@ go get github.com/ckaznocha/protoc-gen-lint
 protoc --plugin=$HOME/go/bin/protoc-gen-lint --lint_out=. -I ./proto/ ./proto/api.proto
 ```
 
-There are lots of other protoc plugins available for generating code from your proto definition, and you can even use [my library](https://www.npmjs.com/package/protoc-plugin) to make your oown in node.
+There are lots of other protoc plugins available for generating code from your proto definition, and you can even use [my library](https://www.npmjs.com/package/protoc-plugin) to make your own in node.
