@@ -1,4 +1,12 @@
-# grpc-demo
+# DEPRACTED
+
+I am including a [demo of grpcnode in it's own repo, now](https://github.com/konsumer/grpcnode/tree/master/example).
+
+
+Here is the old readme:
+
+---
+
 
 Full demo of my nodejs CLI tools for grpc
 
